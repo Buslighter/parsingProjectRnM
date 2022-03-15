@@ -144,14 +144,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="97.826086956521749"/>
+            <point key="canvasLocation" x="-7" y="98"/>
         </scene>
         <!--Character View Controller-->
         <scene sceneID="nHB-ry-CKU">
             <objects>
                 <viewController id="oIY-UD-qK0" customClass="CharacterViewController" customModule="hw12_Parsing_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fPa-6u-j7w">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1238"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Syg-Tu-VLz">
@@ -233,18 +233,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a7x-8O-vHO">
-                                <rect key="frame" x="20" y="567" width="374" height="671"/>
+                                <rect key="frame" x="20" y="567" width="374" height="169"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.23947131629999999" green="0.2387646735" blue="0.26274833079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="episode cell" id="r4h-by-M7u" customClass="EpisodesCell" customModule="hw12_Parsing_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="374" height="42.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="374" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r4h-by-M7u" id="oPf-h7-vuE">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="42.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bka-qO-LMX">
-                                                    <rect key="frame" x="20" y="11.000000000000002" width="334" height="20.666666666666671"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="334" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -308,7 +309,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BgC-gc-Gxs"/>
-                    <size key="freeformSize" width="414" height="1238"/>
                     <connections>
                         <outlet property="episodesTableView" destination="a7x-8O-vHO" id="TMr-jG-EJk"/>
                         <outlet property="fistSeenIn" destination="SUu-yp-AvJ" id="YvD-qd-nf3"/>
