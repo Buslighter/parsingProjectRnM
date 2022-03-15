@@ -54,6 +54,10 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate{
        
         if model.status.rawValue=="Alive"{
             cell.StatusIndicator.backgroundColor = UIColor.green
+        } else if model.status.rawValue=="unknown"{
+            cell.StatusIndicator.backgroundColor = cell.backgroundColor
+        } else {
+            cell.StatusIndicator.backgroundColor = UIColor.red
         }
         return cell
     }
