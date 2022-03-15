@@ -317,6 +317,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BgC-gc-Gxs"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="episodesTableView" destination="a7x-8O-vHO" id="TMr-jG-EJk"/>
                         <outlet property="fistSeenIn" destination="SUu-yp-AvJ" id="YvD-qd-nf3"/>
